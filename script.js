@@ -1,8 +1,9 @@
- var johnAverage, mikeAverage, maryAverage;
+var johnAverage, mikeAverage, maryAverage;
  
- maryAverage = (122 + 120 + 103) / 3;
- johnAverage = (122 + 120 + 103) / 3;
+
+ johnAverage = (120 + 120 + 103) / 3;
  mikeAverage = (122 + 120 + 103) / 3;
+ maryAverage = (102 + 120 + 103) / 3;
 
 
 
@@ -15,6 +16,13 @@
  } else if (maryAverage > johnAverage && maryAverage > mikeAverage){
         console.log("Mary's team won with an average score of " + maryAverage + ".");
     }
+    else if (mikeAverage === johnAverage && mikeAverage === maryAverage && johnAverage
+        === maryAverage){
+         console.log("All teams drew, John's team had a score of " + johnAverage +
+        " , Mike's team had a score of " + mikeAverage + " and Mary's team had a score of " + 
+        maryAverage + "." );
+     }
+
   else if (johnAverage === mikeAverage){
       console.log("John and Mike's team both drew, John's team had a score of " 
       + johnAverage + " and Mike's team had a score of " + mikeAverage + ".");
@@ -27,9 +35,3 @@
     console.log("Mike and Marys's team both drew, Mikes's team had a score of " 
     + mikeAverage + " and Marys's team had a score of " + maryAverage + ".");
   }
-  else if (mikeAverage === johnAverage && mikeAverage === maryAverage && johnAverage
-    === maryAverage){
-     console.log("All teams drew, John's team had a score of " + johnAverage +
-    " , Mike's team had a score of " + mikeAverage + " and Mary's team had a score of " + 
-    maryAverage + "." );
- }
